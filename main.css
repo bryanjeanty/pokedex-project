@@ -3,13 +3,37 @@
   padding: 0;
 }
 
+nav {
+  border-bottom: 1px solid black;
+}
 nav ul {
-  margin-left: 100px;
+  width: 80%;
+  margin: auto;
 }
 nav ul li {
   list-style: none;
   display: inline-block;
-  margin: 10px 25px 10px 0;
+  margin: 15px 30px 10px 0;
+}
+
+main {
+  height: 100vh;
+  width: 80%;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+footer {
+  height: 300px;
+  border: 1px solid black;
+}
+footer .copy-right {
+  height: 50px;
+  border: 1px solid black;
+  margin-top: 250px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
