@@ -8,20 +8,17 @@ $gold_foil: #B3A125;
 // New Colors
 $lavender_mist: #EDE6F2;
 
-
-
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    // background-image: linear-gradient(to right top, #3b4cca, #9924ab, #c6007b, #d60044, #cc0000);
-    background-image: linear-gradient(to top, #3b4cca, #9924ab, #c6007b, #d60044, #cc0000);
+    background-image: linear-gradient(to top, $cerulean_blue, #9924ab, #c6007b, #d60044, $boston_university_red);
 }
 
 nav {
-    background-image: linear-gradient(to bottom, #cc0000, #9e0909);
+    background-image: linear-gradient(to bottom, $boston_university_red, #9e0909);
     color: white;
     ul {
         width: 80%;
@@ -40,12 +37,39 @@ main {
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: #EDE6F2; // #746D75;// #202A25;
+    background-color: $lavender_mist;
     border-radius: 25px;
+    h1 {
+        text-align: center;
+        font-size: 2.25em;
+        padding: 20px;
+    }
+    .carousel-container {
+        width: 50%;
+        margin: auto;
+        img {
+            height: 300px;
+            border-radius: 25px;
+        }
+        .carousel-control-prev {
+            margin-left: 300px;
+            background-color: #d60044;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin-top: 315px;
+        }
+        .carousel-control-next {
+            margin-right: 300px;
+            background-color: #d60044;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin-top: 315px;
+        }
+    }
 }
 
 footer {
     height: 200px;
-    // background-image: linear-gradient(to bottom, #cc0000, #9e0909);
-    // background-image: linear-gradient(to top, #3b4cca, #0920cc);
 }
