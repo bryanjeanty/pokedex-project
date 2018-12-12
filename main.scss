@@ -5,6 +5,9 @@ $cerulean_blue: #3B4CCA;
 $golden_yellow: #FFDE00;
 $gold_foil: #B3A125;
 
+// New Colors
+$lavender_mist: #EDE6F2;
+
 
 
 * {
@@ -13,11 +16,12 @@ $gold_foil: #B3A125;
 }
 
 body {
-    background-image: linear-gradient(to right top, #3b4cca, #9924ab, #c6007b, #d60044, #cc0000);
+    // background-image: linear-gradient(to right top, #3b4cca, #9924ab, #c6007b, #d60044, #cc0000);
+    background-image: linear-gradient(to top, #3b4cca, #9924ab, #c6007b, #d60044, #cc0000);
 }
 
 nav {
-    background-color: #CC0000;
+    background-image: linear-gradient(to bottom, #cc0000, #9e0909);
     color: white;
     ul {
         width: 80%;
@@ -36,11 +40,12 @@ main {
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: white;
+    background-color: #EDE6F2; // #746D75;// #202A25;
     border-radius: 25px;
 }
 
 footer {
     height: 200px;
-    background-color: white;
+    // background-image: linear-gradient(to bottom, #cc0000, #9e0909);
+    // background-image: linear-gradient(to top, #3b4cca, #0920cc);
 }
