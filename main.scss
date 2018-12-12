@@ -1,0 +1,22 @@
+// Template Colors
+$cedar_chest: #C75146;
+$red_brown: #AD2E24;
+$ruby_red: #A31621;
+$falu_red: #81171B;
+$bulgarian_rose: #540804;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    ul {
+        margin-left: 100px;
+        li {
+            list-style: none;
+            display: inline-block;
+            margin: 10px 25px 10px 0;
+        }
+    }
+}
