@@ -9,7 +9,6 @@ body {
 
 nav {
   background-image: linear-gradient(to bottom, #CC0000, #9e0909);
-  color: white;
 }
 nav ul {
   width: 80%;
@@ -82,6 +81,23 @@ main .trainer-input button {
 
 footer {
   height: 200px;
+}
+
+.box {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+.box .pokemon_img {
+  width: 35%;
+  float: left;
+}
+.box .pokemon_sect {
+  width: 50%;
+  float: right;
+  margin-top: 50px;
+}
+.box .pokemon_sect h2 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

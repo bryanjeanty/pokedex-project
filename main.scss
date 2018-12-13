@@ -26,7 +26,6 @@ body {
 
 nav {
     background-image: linear-gradient(to bottom, $boston_university_red, $nav_bg_color_2);
-    color: white;
     ul {
         width: 80%;
         margin: auto;
@@ -100,4 +99,23 @@ main {
 
 footer {
     height: 200px;
+}
+
+// Design for character pages
+.box {
+    margin-left: 120px;
+    margin-right: 120px;
+    .pokemon_img {
+        width: 35%;
+        float: left;
+    }
+
+    .pokemon_sect {
+        width: 50%;
+        float: right;
+        margin-top: 50px;
+        h2 {
+            text-align: center;
+        }
+    }
 }

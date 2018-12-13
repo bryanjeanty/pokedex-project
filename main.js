@@ -8,7 +8,6 @@ submit.addEventListener('click', () => {
     let fruit = inputs[2].value;
 
     let avatarBox = document.createElement('div');
-    // avatarBox.classList.add('icon');
     avatarBox.style.cssFloat = 'left';
     avatarBox.style.width = '150px';
     avatarBox.style.marginLeft = '100px';
@@ -26,8 +25,6 @@ submit.addEventListener('click', () => {
     avatarBox.appendChild(avatarIcon);
 
     let pokemonBox = document.createElement('div');
-    // pokemonBox.classList.add('icon');
-    pokemonBox.style.border = '1px solid black';
     pokemonBox.style.cssFloat = 'right';
     pokemonBox.style.margin = '25px 50px';
     pokemonBox.style.width = '700px';
@@ -40,46 +37,61 @@ submit.addEventListener('click', () => {
     pokemonBox.appendChild(pokemonTitle);
 
     let pokeContainer = document.createElement('div');
-    pokeContainer.style.border = '1px solid black';
     pokeContainer.style.width = '25%';
     pokeContainer.classList.add('poke-icon');
     pokemonBox.appendChild(pokeContainer);
 
+    let alakazamLink = document.createElement('a');
+    alakazamLink.href = 'alakazam.html';
+    alakazamLink.style.textDecoration = 'none';
+    pokeContainer.appendChild(alakazamLink);
+
     let alakazam = document.createElement('img');
     alakazam.src = 'images/065-alakazam@2x.png';
-    pokeContainer.appendChild(alakazam);
+    alakazam.style.marginBottom = '5px';
+    alakazamLink.appendChild(alakazam);
 
     let alakazamName = document.createElement('p');
     alakazamName.innerHTML = 'Alakazam';
-    pokeContainer.appendChild(alakazamName);
+    alakazamLink.appendChild(alakazamName);
 
     let pokeContainer_2 = document.createElement('div');
-    pokeContainer_2.style.border = '1px solid black';
     pokeContainer_2.style.width = '25%';
     pokeContainer_2.classList.add('poke-icon');
     pokemonBox.appendChild(pokeContainer_2);
 
+    let squirtleLink = document.createElement('a');
+    squirtleLink.href = 'squirtle.html';
+    squirtleLink.style.textDecoration = 'none';
+    pokeContainer_2.appendChild(squirtleLink);
+
     let squirtle = document.createElement('img');
     squirtle.src = 'images/007-squirtle@2x.png';
-    pokeContainer_2.appendChild(squirtle);
+    squirtle.style.marginBottom = '5px';
+    squirtleLink.appendChild(squirtle);
 
     let squirtleName = document.createElement('p');
     squirtleName.innerHTML = 'Squirtle';
-    pokeContainer_2.appendChild(squirtleName);
+    squirtleLink.appendChild(squirtleName);
 
     let pokeContainer_3 = document.createElement('div');
-    pokeContainer_3.style.border = '1px solid black';
     pokeContainer_3.style.width = '25%';
     pokeContainer_3.classList.add('poke-icon');
     pokemonBox.appendChild(pokeContainer_3);
 
+    let xatuLink = document.createElement('a');
+    xatuLink.href = 'xatu.html';
+    xatuLink.style.textDecoration = 'none';
+    pokeContainer_3.appendChild(xatuLink);
+
     let xatu = document.createElement('img');
     xatu.src = 'images/178-xatu@2x.png';
-    pokeContainer_3.appendChild(xatu);
+    xatu.style.marginBottom = '5px';
+    xatuLink.appendChild(xatu);
 
     let xatuName = document.createElement('p');
     xatuName.innerHTML = 'Xatu';
-    pokeContainer_3.appendChild(xatuName);
+    xatuLink.appendChild(xatuName);
 
     let pokeIcon = document.querySelectorAll('.poke-icon');
     for(let i = 0; i < pokeIcon.length; i++) {
@@ -88,4 +100,4 @@ submit.addEventListener('click', () => {
         pokeIcon[i].style.margin = '15px 28px';
     }
 
-}, false);
+});
