@@ -5,6 +5,13 @@ $cerulean_blue: #3B4CCA;
 $golden_yellow: #FFDE00;
 $gold_foil: #B3A125;
 
+// Transition Colors
+$body_bg_color_2: #9924ab;
+$body_bg_color_3: #c6007b;
+$body_bg_color_4: #d60044;
+
+$nav_bg_color_2: #9e0909;
+
 // New Colors
 $lavender_mist: #EDE6F2;
 
@@ -14,11 +21,11 @@ $lavender_mist: #EDE6F2;
 }
 
 body {
-    background-image: linear-gradient(to top, $cerulean_blue, #9924ab, #c6007b, #d60044, $boston_university_red);
+    background-image: linear-gradient(to top, $cerulean_blue, $body_bg_color_2, $body_bg_color_3, $body_bg_color_4, $boston_university_red);
 }
 
 nav {
-    background-image: linear-gradient(to bottom, $boston_university_red, #9e0909);
+    background-image: linear-gradient(to bottom, $boston_university_red, $nav_bg_color_2);
     color: white;
     ul {
         width: 80%;
@@ -32,7 +39,7 @@ nav {
 }
 
 main {
-    height: 100vh;
+    height: 800px;
     width: 80%;
     margin: auto;
     margin-top: 50px;
@@ -53,7 +60,7 @@ main {
         }
         .carousel-control-prev {
             margin-left: 300px;
-            background-color: #d60044;
+            background-color: $body_bg_color_4;
             height: 50px;
             width: 50px;
             border-radius: 50%;
@@ -61,11 +68,32 @@ main {
         }
         .carousel-control-next {
             margin-right: 300px;
-            background-color: #d60044;
+            background-color: $body_bg_color_4;
             height: 50px;
             width: 50px;
             border-radius: 50%;
             margin-top: 315px;
+        }
+    }
+
+    .trainer-input {
+        background-image: linear-gradient(to bottom, $golden_yellow, $gold_foil);
+        text-align: center;
+        padding: 10px;
+        margin: 50px 0 30px 0;
+        input {
+            margin: 0 40px;
+            border: none;
+            padding-left: 5px;
+        }
+        button {
+            padding: 8px 13px;
+            border: none;
+            text-align: center;
+            color: white;
+            background-color: $cerulean_blue;
+            border-radius: 10px;
+            cursor: pointer;
         }
     }
 }
