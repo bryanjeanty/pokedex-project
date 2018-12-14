@@ -93,8 +93,21 @@ main .trainer-input button {
 }
 
 footer {
-  height: 200px;
   background-color: #048BA8;
+  height: 100%;
+}
+footer .btm-pg {
+  width: 80%;
+  margin: auto;
+}
+footer .btm-pg h4 {
+  margin-top: 10px;
+}
+footer .btm-pg li {
+  list-style: none;
+}
+footer .btm-pg p {
+  text-align: center;
 }
 
 .char_main {
