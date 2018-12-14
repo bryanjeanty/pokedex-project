@@ -134,8 +134,21 @@ main {
 }
 
 footer {
-    height: 200px;
     background-color: $footer_color;
+    height: 100%;
+    .btm-pg {
+        width: 80%;
+        margin: auto;
+        h4 {
+            margin-top: 10px;
+        }
+        li {
+            list-style: none;
+        }
+        p {
+            text-align: center;
+        }
+    }
 }
 
 // Design for character pages
