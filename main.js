@@ -1,6 +1,8 @@
 let submit = document.querySelector('button');
 
-submit.addEventListener('click', () => {
+submit.addEventListener('click', (event) => {
+    event.preventDefault();
+
     let main = document.querySelector('main');
     let inputs = document.querySelectorAll('input');
     let name = inputs[0].value;
@@ -44,15 +46,17 @@ submit.addEventListener('click', () => {
     let alakazamLink = document.createElement('a');
     alakazamLink.href = 'alakazam.html';
     alakazamLink.style.textDecoration = 'none';
+    alakazamLink.style.color = 'black';
     pokeContainer.appendChild(alakazamLink);
 
     let alakazam = document.createElement('img');
     alakazam.src = 'images/065-alakazam@2x.png';
-    alakazam.style.marginBottom = '5px';
+    alakazam.style.marginBottom = '10px';
     alakazamLink.appendChild(alakazam);
 
     let alakazamName = document.createElement('p');
     alakazamName.innerHTML = 'Alakazam';
+    alakazamName.style.color = '#EDE6F2';
     alakazamLink.appendChild(alakazamName);
 
     let pokeContainer_2 = document.createElement('div');
@@ -63,15 +67,17 @@ submit.addEventListener('click', () => {
     let squirtleLink = document.createElement('a');
     squirtleLink.href = 'squirtle.html';
     squirtleLink.style.textDecoration = 'none';
+    squirtleLink.style.color = 'black';
     pokeContainer_2.appendChild(squirtleLink);
 
     let squirtle = document.createElement('img');
     squirtle.src = 'images/007-squirtle@2x.png';
-    squirtle.style.marginBottom = '5px';
+    squirtle.style.marginBottom = '10px';
     squirtleLink.appendChild(squirtle);
 
     let squirtleName = document.createElement('p');
     squirtleName.innerHTML = 'Squirtle';
+    squirtleName.style.color = '#EDE6F2';
     squirtleLink.appendChild(squirtleName);
 
     let pokeContainer_3 = document.createElement('div');
@@ -82,15 +88,17 @@ submit.addEventListener('click', () => {
     let xatuLink = document.createElement('a');
     xatuLink.href = 'xatu.html';
     xatuLink.style.textDecoration = 'none';
+    xatuLink.style.color = 'black';
     pokeContainer_3.appendChild(xatuLink);
 
     let xatu = document.createElement('img');
     xatu.src = 'images/178-xatu@2x.png';
-    xatu.style.marginBottom = '5px';
+    xatu.style.marginBottom = '10px';
     xatuLink.appendChild(xatu);
 
     let xatuName = document.createElement('p');
     xatuName.innerHTML = 'Xatu';
+    xatuName.style.color = '#EDE6F2';
     xatuLink.appendChild(xatuName);
 
     let pokeIcon = document.querySelectorAll('.poke-icon');

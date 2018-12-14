@@ -18,7 +18,7 @@ axios.get('https://pokeapi.co/api/v2/pokemon/alakazam/')
         let alakazam = new Pokemon(stat[5].base_stat, stat[4].base_stat, stat[3].base_stat, abilities);
 
         let hp = document.createElement('p');
-        hp.innerHTML = `hp: ${ alakazam.hp }`;
+        hp.innerHTML = `Hp: ${ alakazam.hp }`;
         poke_one.appendChild(hp);
 
         let attack = document.createElement('p');

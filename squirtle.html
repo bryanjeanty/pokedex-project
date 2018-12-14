@@ -11,17 +11,16 @@
 <body>
     <nav>
         <ul>
-            <li><a style="text-decoration: none; color: white;" href="index.html">Home</a></li>
-            <li><a style="text-decoration: none; color: white;" href="alakazam.html">Alakazam</a></li>
-            <li><a style="text-decoration: none; color: white;" href="squirtle.html">Squirtle</a></li>
-            <li><a style="text-decoration: none; color: white;" href="xatu.html">Xatu</a></li>
+            <li><a class="nav_links" href="index.html">Home</a></li>
+            <li><a class="nav_links" href="alakazam.html">Alakazam</a></li>
+            <li><a class="nav_links" href="squirtle.html">Squirtle</a></li>
+            <li><a class="nav_links" href="xatu.html">Xatu</a></li>
         </ul>
     </nav>
 
-    <main>
+    <div class="char_main">
         <h1>Squirtle</h1>
-
-        <div class="box">
+        <div class="box_item">
             <img class="pokemon_img" src="http://www.pokestadium.com/assets/img/sprites/official-art/large/squirtle.png" alt="Image of squirtle">
 
             <section class="pokemon_sect">
@@ -30,8 +29,38 @@
                 </article>
             </section>
         </div>
-        <img src="http://www.pokestadium.com/sprites/xy/squirtle-2.gif" alt="squirtle gif">
-    </main>
+
+        <div class="row row-1">
+            <div class="col-6 box-1">
+                <img src="http://www.pokestadium.com/sprites/xy/squirtle-2.gif" alt="squirtle gif">
+            </div>
+            <div class="col-6 box-2">
+                <div class="row row-2">
+                    <div class="col-12 box-3">
+                        <div class="row row-3">
+                            <div class="col-1"></div>
+                            <div class="col-2 graph-bar-1 squirtle-hp"></div>
+                            <div class="col-2"></div>
+                            <div class="col-2 graph-bar-2 squirtle-attack"></div>
+                            <div class="col-2"></div>
+                            <div class="col-2 graph-bar-3 squirtle-defense"></div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-4 text-container">
+                        <p class="text-box">Hp</p>
+                    </div>
+                    <div class="col-4 text-container">
+                        <p class="text-box">Attack</p>
+                    </div>
+                    <div class="col-4 text-container">
+                        <p class="text-box">Defense</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
 
