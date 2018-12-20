@@ -1,11 +1,3 @@
-class Pokemon {
-    constructor(hp, attack, defense, abilities) {
-        this.hp = hp;
-        this.attack = attack;
-        this.defense = defense;
-        this.abilities = abilities;
-    }
-}
 
 // Alakazam Object
 axios.get('https://pokeapi.co/api/v2/pokemon/alakazam/')
